@@ -45,7 +45,7 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/home') }}">Dashboards</a>
+                                    <a href="{{ url('/home') }}">Carrito de compras - Gestión de pedidos</a>
                                 </li>
                                 @if (auth()->user()->admin)
                                 <li>

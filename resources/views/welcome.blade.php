@@ -21,7 +21,7 @@
             flex-direction: column;
         }
     </style>
-endsection
+@endsection
 
 @section('body-class', 'landing-page')
 
