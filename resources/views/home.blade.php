@@ -49,9 +49,9 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th class="text-center">#</th>
+                        <th class="text-center">Imagen</th>
                         <th class="text-center">Nombre</th>
-                        <th class=>Precio</th>
+                        <th>Precio</th>
                         <th>Cantidad</th>
                         <th>SubTotal</th>
                         <th>Opciones</th>
@@ -63,12 +63,12 @@
                     <td class="text-center">
                         <img src="{{ $detail->product->featured_image_url }}" height="50">
                     </td>
-                    <td>
+                    <td class="text-center">
                         <a href="{{ url('/products/'.$detail->product->id) }}" target="_blank">{{ $detail->product->name }}</a>
                     </td>
-                    <td>{{ $detail->product->price }}   &euro;</td>
-                    <td>{{ $detail->quantity }}</td>
-                    <td>{{ $detail->quantity * $detail->product->price }}   &euro;</td>
+                    <td> {{ $detail->product->price }}   &euro;</td>
+                    <td> {{ $detail->quantity }}</td>
+                    <td> {{ $detail->quantity * $detail->product->price }}   &euro;</td>
                     <td class="td-actions">
                         
                         <form method="post" action="{{ url('/cart') }}">

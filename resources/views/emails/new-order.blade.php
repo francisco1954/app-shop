@@ -21,12 +21,12 @@
 		</li>
 	</ul>
 
-	<p>Detalles del carrito de compras:</p>
+	<p>Estos son los detalles del pedido:</p>
 	<ul>
 		@foreach ($cart->details as $detail)
 		<li>
 			{{ $detail->product->name }} x {{ $detail->quantity }}
-			($ {{ $detail->quantity * $detail->product->price }} )
+			( {{ $detail->quantity * $detail->product->price }} €)
 		</li>
 		@endforeach
 	</ul>

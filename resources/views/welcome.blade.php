@@ -70,11 +70,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">Bienvenidos a {{ config('app.name') }}.</h1>
-                <h4>Realiza pedidos en línea y te contactaremos para coordinar la entrega.</h4>
+                <h1 class="title">Bienvenidos al {{ config('app.name') }}.</h1>
+                <h4>Regala todo lo que no utilizes, contactaran contigo para coordinar la entrega.</h4>
                 <br />
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
-                    <i class="fa fa-play"></i> ¿Como funciona?
+                <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">-->
+                <a href="https://youtu.be/-Mc0PEyfw_c" class="btn btn-danger btn-raised btn-lg">
+                    <i class="fa fa-play"></i>&nbsp;&nbsp;Para ver tranquilamente</a>
                 </a>
             </div>
         </div>
@@ -86,7 +87,7 @@
         <div class="section text-center section-landing">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="title">¿Por qué AppShop</h2>
+                    <h2 class="title">¿Por qué {{ config('app.name') }}</h2>
                     <h5 class="description">Puedes revisar nuestra relación completa de productos, comparar precios y realizar tus pedidos cuando estés seguro.</h5>
                 </div>
             </div>
@@ -108,7 +109,7 @@
                             <div class="icon icon-success">
                                 <i class="material-icons">verified_user</i>
                             </div>
-                            <h4 class="info-title">Second Feature</h4>
+                            <h4 class="info-title">Segunda característica</h4>
                             <p>Escribe algunas líneas sobre cada uno. Un párrafo que describa una característica será suficiente.</p>
                         </div>
                     </div>
