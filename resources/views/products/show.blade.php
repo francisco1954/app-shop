@@ -5,7 +5,6 @@
 @section('body-class', 'profile-page')
 
 @section('content')
-
 <div class="header header-filter" style="background-image: url('/img/examples/city.jpg');"></div>
 
 <div class="main main-raised">

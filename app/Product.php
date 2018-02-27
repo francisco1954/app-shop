@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Product extends Model
 {
     // $product->category
@@ -30,5 +31,13 @@ class Product extends Model
 
         // default
         return '/images/products/default.jpg';
+    }
+
+    public function getCategoryNameAttribute()
+    {
+        if ($this->category)
+            return $this->category->name;
+
+        return 'General';
     }
 }

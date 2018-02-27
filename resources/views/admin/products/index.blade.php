@@ -33,7 +33,7 @@
                                 <td class="text-center">{{ $product->id }}</td>
                                 <td>{{ $product->name }}</td>
                                 <td>{{ $product->description }}</td>
-                                <td>{{ $product->category ? $product->category->name : 'General' }}</td>
+                                <td>{{ $product->category_name }}</td>
                                 <td class="text-right">&euro; {{ $product->price }}</td>
                                 <td class="td-actions text-right">
                                     
@@ -41,7 +41,7 @@
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
 
-                                        <a type="button" rel="tooltip" title="Ver producto" class="btn btn-info btn-simple btn-xs">
+                                        <a href="{{ url('/products/' .$product->id) }}" type="button" rel="tooltip" title="Ver producto" class="btn btn-info btn-simple btn-xs" target="_black" width='500', height='380'>
                                             <i class="fa fa-info"></i>
                                         </a>
                                         <a href="{{ url('/admin/products/'.$product->id.'/edit')}}" rel="tooltip" title="Editar producto" class="btn btn-success btn-simple btn-xs">

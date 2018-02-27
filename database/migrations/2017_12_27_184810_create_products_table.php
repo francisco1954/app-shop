@@ -11,20 +11,7 @@ class CreateProductsTable extends Migration
      *
      * @return void
      */
-    public function up()
-    {
-        Schema::create('products', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('description');
-            $table->text('long_description')->nullable();
-            $table->float('price');
-            // crea clave foránea
-            $table->integer('category_id')->unsigned()->nullable();
-            $table->foreign('category_id')->references('id')->on('categories');
-            //
-            $table->timestamps();
-        });
+    
     }
 
     /**
