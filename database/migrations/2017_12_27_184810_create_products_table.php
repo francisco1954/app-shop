@@ -12,7 +12,7 @@ class CreateProductsTable extends Migration
      * @return void
      */
     
-    }
+    
 
     /**
      * Reverse the migrations.
@@ -24,3 +24,4 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
+

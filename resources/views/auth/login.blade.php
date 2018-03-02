@@ -32,9 +32,9 @@
 
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <i class="material-icons">email</i>
+                                    <i class="material-icons">fingerprint</i>
                                 </span>
-                                <input id="email" type="email" placeholder="Email..." class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="username" type="text" placeholder="Nombre de Usuario" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
                             </div>
 
                             <div class="input-group">
