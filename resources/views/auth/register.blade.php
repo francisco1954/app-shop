@@ -23,17 +23,6 @@
 
                         <div class="header header-primary text-center">
                             <h4>Registro</h4>
-                            <!--<div class="social-line">
-                                <a href="#pablo" class="btn btn-simple btn-just-icon">
-                                    <i class="fa fa-facebook-square"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-simple btn-just-icon">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-simple btn-just-icon">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>-->
                         </div>
                         <p class="text-divider">Completa tus datos</p>
                         <div class="content">
@@ -87,7 +76,7 @@
                             </div>
                         </div>
                         <div class="footer text-center">
-                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Confirmar registro</button>
+                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Confirmar Registro</button>
                         </div>
                         <!--<a class="btn btn-link" href="{{ route('password.request') }}">
                              Forgot Your Password?
