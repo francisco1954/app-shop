@@ -35,9 +35,15 @@
             </div>
 
             <div class="text-center">
-                <button class="btn btn-primary" data-toggle="modal" data-target="#modalAddToCart">
-                    <i class="material-icons">add</i>  Añadir al carrito de compras
-                </button>
+                @if (auth()->check())
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalAddToCart">
+                        <i class="material-icons">add</i>  Añadir al carrito de compras
+                    </button>
+                @else
+                    <a href="{{ url('/login?redirect_to='.url()->current()) }}" class="btn btn-primary">
+                        <i class="material-icons">add</i>  Añadir al carrito de compras
+                    </a>
+                @endif
             </div>
 
             
